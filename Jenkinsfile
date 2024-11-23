@@ -2,7 +2,6 @@ pipeline {
     agent any
      tools {
         jdk 'java21'         
-        git 'Default'       
     }
     stages {
         stage('Git Checkout') {
