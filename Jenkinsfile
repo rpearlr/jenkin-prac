@@ -25,7 +25,7 @@ pipeline {
             steps {
                 script {
                     echo 'Running Python Script...'
-                    bat 'C:\Users\User\AppData\Local\Programs\Python\Python312\python.exe hello1.py'
+                    bat 'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python312\\python.exe hello1.py'
                 }
             }
         }
