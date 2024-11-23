@@ -15,8 +15,8 @@ pipeline {
             steps {
                 script {
                     echo 'Running Java Program...'
-                    sh 'javac hello.java'
-                    sh 'java Main'
+                    bat 'javac hello.java'
+                    bat 'java Main'
                 }
             }
         }
@@ -25,7 +25,7 @@ pipeline {
             steps {
                 script {
                     echo 'Running Python Script...'
-                    sh 'python3 hello1.py'
+                    bat 'python3 hello1.py'
                 }
             }
         }
