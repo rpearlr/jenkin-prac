@@ -16,7 +16,7 @@ pipeline {
                 script {
                     echo 'Running Java Program...'
                     bat 'javac hello.java'
-                    bat 'java Main'
+                    bat 'java hello'
                 }
             }
         }
