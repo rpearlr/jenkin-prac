@@ -4,7 +4,7 @@ pipeline {
         stage('Git Checkout') {
             steps {
                 echo 'Cloning Repository...'
-                git branch: 'main', url: 'https://github.com/<your-username>/<your-repo>.git'
+                git branch: 'main', url: 'https://github.com/rpearlr/jenkin-prac.git'
             }
         }
 
@@ -12,7 +12,7 @@ pipeline {
             steps {
                 script {
                     echo 'Running Java Program...'
-                    sh 'javac Main.java'
+                    sh 'javac hello.java'
                     sh 'java Main'
                 }
             }
@@ -22,7 +22,7 @@ pipeline {
             steps {
                 script {
                     echo 'Running Python Script...'
-                    sh 'python3 script.py'
+                    sh 'python3 hello1.py'
                 }
             }
         }
