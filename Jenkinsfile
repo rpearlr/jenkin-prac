@@ -1,7 +1,8 @@
 pipeline {
     agent any
      tools {
-        jdk 'java21'         
+        jdk 'java21'
+         python 'python312'
     }
     stages {
         stage('Git Checkout') {
