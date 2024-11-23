@@ -2,7 +2,6 @@ pipeline {
     agent any
      tools {
         jdk 'java21'
-        python 'python312'
     }
     stages {
         stage('Git Checkout') {
@@ -26,7 +25,7 @@ pipeline {
             steps {
                 script {
                     echo 'Running Python Script...'
-                    bat 'python3 hello1.py'
+                    bat 'C:\Users\User\AppData\Local\Programs\Python\Python312\python.exe hello1.py'
                 }
             }
         }
